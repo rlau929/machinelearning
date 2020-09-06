@@ -39,7 +39,7 @@ balance accuracy score is 0.93
 
 ### Analysis and Final Recommendation
 
-We performed two different classifiers: Balanced Random Forest (BRF) and Ensemble AdaBoost Classifier (EAC). Overall, EAC showed the best result compared to BRF. EAC showed fewer false negatives and the balance accuracy score is 0.93, significantly more than BRF at 0.77. The precision and recall is also improved for EAC compared to BRF. 
+We performed two different classifiers: Balanced Random Forest (BRF) and Ensemble AdaBoost Classifier (EAC). Overall, EAC showed the best result compared to BRF. EAC showed fewer false negatives and the balance accuracy score is 0.93, significantly more than BRF at 0.77. The precision and recall is also improved for EAC compared to BRF. BRF precision for high risk is 0.03 and low risk is 1.00. BRF recall for high risk is 0.65 for high risk and 0.93 for low risk.
 
 I recommend utilizing matplotlib.pyplot and visualize the data using plt.scatter. Another recommendation is to use the decision tree model and make a prediction using the tree model. The current data contains many columns that can determine the loan status. By using the decision tree, we can determine which prediction model fits best.
 
@@ -117,6 +117,6 @@ f1 score for low_risk is 0.72
 balance accuracy score is 0.64
 
 ### Analysis and Final Recommendation
-After performing different analysis using overampling, undersampling, and a combination of both over and undersampling, it is clear that the overall predictors are similar. However, to find out which is best to use, we have to analyze the data. After combing through the data, Naive Random Oversampling showed fewer false positive and false negatives. Additionally, the balance accuracy is much higher at 0.74 compared to the other predictors. 
+After performing different analysis using overampling, undersampling, and a combination of both over and undersampling, it is clear that the overall predictors are similar. However, to find out which is best to use, we have to analyze the data. After combing through the data, Naive Random Oversampling showed fewer false positive and false negatives. Additionally, the balance accuracy is much higher at 0.74 compared to the other predictors. Naive Random Oversampling (NRO) precision for high risk is 0.02 and low risk is 1.00. The recall for high risk is 0.76 and 0.73 for low risk. SMOTE Oversampling precision for high risk is 0.01 and low risk is 1.00. The recall for high risk is 0.72 and low risk is 0.65. Undersampling precision high risk is 0.01 and low risk is 1.00. Recall for high risk is 0.67 and low risk is 0.42. Lastly, combination sampling of precision high risk is 0.01 and low risk is 0.72. Recall for high risk is 0.72 and low risk is 0.57.
 
 I recommend utilizing matplotlib.pyplot and visualize the data using plt.scatter. We can visually see if there are any outliers. If there is a significant amount of outliers, we can make a suggestion to use SMOTEENN since SMOTEENN perfectly handles outliers. Another recommendation is to use the decision tree model and make a prediction using the tree model. The current data contains many columns that can determine the loan status. By using the decision tree, we can determine which prediction model fits best.
